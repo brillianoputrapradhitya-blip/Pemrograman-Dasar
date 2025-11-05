@@ -97,7 +97,7 @@ void FindHighestScore(studentType (&studentHighest)[studentAmount]){
 }
 
 void PrintHighestScore(int tempVar){
-    std::cout << "\nHIGHEST SCORE REACHED BY:\n" << fullName[tempVar] << " (" << student[tempVar].testScore << "/" << student[tempVar].grade 
+    std::cout << "\nHIGHEST SCORE IS REACHED BY:\n" << fullName[tempVar] << " (" << student[tempVar].testScore << "/" << student[tempVar].grade 
         << ") \n";
 }
 
@@ -118,5 +118,6 @@ void PrintAll(studentType (&allStudents)[studentAmount]){
         std::cout << std::left << std::setw(4) << i+1 << std::left << std::setw(25) << fullName[i] << std::left << std::setw(15) << student[i].testScore
             << std::left << std::setw(7) << student[i].grade << "\n"; 
     }
+
 
 }
