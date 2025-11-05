@@ -40,13 +40,13 @@ int main(){
 
 void ReadData(studentType (&studentInfo)[studentAmount]){
     for(int i = 0; i < studentAmount; i++){
-        std::cout << "Enter student " << i+1 << " first name: ";
+        std::cout << "Enter student " << i+1 << "'s first name: ";
         std::getline(std::cin, studentInfo[i].studentFName);
         
-        std::cout << "Enter student " << i+1 << " last name: ";
+        std::cout << "Enter student " << i+1 << "'s last name: ";
         std::getline(std::cin, studentInfo[i].studentLName);
 
-        std::cout << "Enter student " << i+1 << " test score: ";
+        std::cout << "Enter student " << i+1 << "'s test score: ";
         std::cin >> studentInfo[i].testScore;
         std::cin.ignore();
 
@@ -121,3 +121,4 @@ void PrintAll(studentType (&allStudents)[studentAmount]){
 
 
 }
+
