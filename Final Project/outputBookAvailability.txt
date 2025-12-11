@@ -1,0 +1,3 @@
+ID; Title; Author; Price($); Stock
+1;Blinding Light;Orang Gila;10990;1097
+2;Duar Duar;Arif Krunia;99999;9
