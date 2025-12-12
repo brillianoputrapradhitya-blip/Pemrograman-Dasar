@@ -1,3 +1,0 @@
-ID;Name;Borrowed;Bought;Returned
-123;Cles Royal;1,2;1;
-321;Reoar Crud;1;1;
