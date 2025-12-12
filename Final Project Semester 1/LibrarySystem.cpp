@@ -202,13 +202,11 @@ void LibrarySystem::saveToFile1(const string& filename) {
 void LibrarySystem::saveToFile2(const string& filename) {
     ofstream out(filename);
 
-    // tulis header
     out << "ID;Name;Borrowed;Bought;Returned\n";
 
     for (const auto& s : students) {
         out << s.getId() << ";" << s.getName() << ";";
 
-        // tulis borrowed book IDs
         const auto& borrowed = s.getBorrowedBooks();
         for (size_t i = 0; i < borrowed.size(); ++i) {
             out << borrowed[i].getId();
@@ -216,7 +214,6 @@ void LibrarySystem::saveToFile2(const string& filename) {
         }
         out << ";";
 
-        // tulis bought book IDs
         const auto& bought = s.getBoughtBooks();
         for (size_t i = 0; i < bought.size(); ++i) {
             out << bought[i].getId();
@@ -224,7 +221,6 @@ void LibrarySystem::saveToFile2(const string& filename) {
         }
         out << ";";
 
-        // tulis returned book IDs
         const auto& returned = s.getReturnedBooks();
         for (size_t i = 0; i < returned.size(); ++i) {
             out << returned[i].getId();
@@ -236,5 +232,6 @@ void LibrarySystem::saveToFile2(const string& filename) {
 
     out.close();
 }
+
 
 
