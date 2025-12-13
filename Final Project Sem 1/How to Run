@@ -1,0 +1,2 @@
+1. Run in Terminal first: g++ main.cpp Book.cpp Student.cpp LibrarySystem.cpp Admin.cpp -o program
+2. Run again: .\program
